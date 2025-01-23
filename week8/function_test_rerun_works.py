@@ -25,7 +25,7 @@ def load_functions():
         {
             "function": "def check_key(d, key):\n    if ____ in ____:\n        return True\n    return False\n\nprint(check_key({____}, 'age'))",
             "options": ["d", "key", "'name': 'Alice', 'age': 25"],
-            "solutions": ["d", "key", "'name': 'Alice', 'age': 25"]
+            "solutions": ["key", "d", "'name': 'Alice', 'age': 25"]
         },
         {
             "function": "def find_max(lst):\n    max_val = ____\n    for num in lst:\n        if num > max_val:\n            max_val = num\n    return max_val\n\nprint(find_max([____]))",
@@ -65,7 +65,7 @@ def load_functions():
         {
             "function": "def calculate_bmi(weight, height, und_value, norm_value):\n    bmi = weight / (____ ** 2)\n    if bmi < ____:\n        return 'Underweight'\n    elif bmi < ____:\n        return 'Normal weight'\n    else:\n        return 'Overweight'\n\nprint(calculate_bmi(____, ____, ____, ____))",
             "options": ["height", "und_value", "norm_value", "1.75", "weight=80", "18.5", "25"],
-            "solutions": ["height", "und_value", "norm_value", "ov_value", "weight=80", "1.75", "18.5", "25"]
+            "solutions": ["height", "und_value", "norm_value", "weight=80", "1.75", "18.5", "25"]
         },
         {
             "function": "def find_duplicates(lst):\n    seen = set()\n    duplicates = set()\n    for item in ____:\n        if item in ____:\n            duplicates.add(item)\n        else:\n            seen.add(____)\n    return duplicates\n\nprint(find_duplicates([____]))",
@@ -99,7 +99,7 @@ def load_functions():
         },
         {
             "function": "def determine_pass_fail(score, passing_score):\n    if score >= ____:\n        return 'Pass'\n    else:\n        return 'Fail'\n\nprint(determine_pass_fail(____, ____))",
-            "options": ["passing_score", "50", "85"],
+            "options": ["passing_score", "passing_score=50", "85"],
             "solutions": ["passing_score", "85", "passing_score=50"]
         },
         {
@@ -116,8 +116,8 @@ def load_functions():
         },
         {
             "function": "def shopping_list(items):\n    for item in ____:\n        print(f'You need to buy {____}')\n    return f'Total items: {len(____)}'\n\nprint(shopping_list([____]))",
-            "options": ["items", "item", "items)", "'milk', 'eggs', 'bread', 'butter'"],
-            "solutions": ["items", "item", "items)", "'milk', 'eggs', 'bread', 'butter'"]
+            "options": ["items", "item", "items", "'milk', 'eggs', 'bread', 'butter'"],
+            "solutions": ["items", "item", "items", "'milk', 'eggs', 'bread', 'butter'"]
         },
         {
             "function": "def travel_time(distance, speed):\n    if speed <= 0:\n        return 'Speed must be greater than ____'\n    time = ____ / ____\n    return f'Travel time is {____}.'\n\nprint(travel_time(____, ____))",
