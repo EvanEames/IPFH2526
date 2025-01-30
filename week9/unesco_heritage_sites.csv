@@ -1,0 +1,16 @@
+SiteID,Name,Country,Category,YearInscribed,VisitorsPerYear,Area_km2,Threatened
+1,Great Wall of China,China,Cultural,1987,10.0,21196.0,No
+2,Machu Picchu,Peru,Cultural,1983,1.5,32.0,No
+3,Pyramids of Giza,Egypt,Cultural,1979,14.0,16.0,No
+4,Grand Canyon,USA,Natural,1979,6.0,4927.0,No
+5,Colosseum,Italy,Cultural,1980,7.6,0.02,No
+6,Serengeti National Park,Tanzania,Natural,1981,1.5,14763.0,No
+7,Stonehenge,UK,Cultural,1986,1.3,0.03,No
+8,Taj Mahal,India,Cultural,1983,8.0,0.17,No
+9,Galápagos Islands,Ecuador,Natural,1978,0.3,8010.0,Yes
+10,Angkor Wat,Cambodia,Cultural,1992,2.6,162.6,No
+11,Yellowstone National Park,USA,Natural,1978,4.0,8983.0,No
+12,Acropolis of Athens,Greece,Cultural,1987,2.0,3.04,No
+13,Great Barrier Reef,Australia,Natural,1981,2.0,344400.0,Yes
+14,Petra,Jordan,Cultural,1985,1.0,264.0,No
+15,Eiffel Tower,France,Cultural,1991,6.9,0.01,No
