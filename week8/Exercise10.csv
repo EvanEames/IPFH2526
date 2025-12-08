@@ -1,0 +1,16 @@
+Site,Location,Description,VisitorCount,Archaeological,Architectural,Artistic,Historical
+Great Wall of China,China,"Ancient wall in northern China",5000000,1,0,0,0
+Machu Picchu,Peru,"Incan citadel in the Andes mountains",2000000,1,0,0,0
+Colosseum,Italy,"Roman amphitheater in Rome",4000000,0,1,0,0
+Taj Mahal,India,"Mausoleum in Agra",6000000,0,1,0,1
+Acropolis of Athens,Greece,"Ancient citadel in Athens",3000000,1,0,0,1
+Pyramids of Giza,Egypt,"Ancient pyramids in Giza",7000000,1,0,0,0
+Angkor Wat,Cambodia,"Temple complex in Siem Reap",1500000,1,0,1,0
+Eiffel Tower,France,"Iron lattice tower in Paris",7000000,0,1,0,0
+Petra,Jordan,"Ancient city carved into rock",2500000,1,0,0,1
+Mesa Verde National Park,United States,"Ancient Puebloan cliff dwellings",1000000,1,0,0,1
+Statue of Liberty,United States,"Iconic statue in New York City",4000000,0,1,0,1
+Potala Palace,China,"Buddhist palace in Lhasa",1000000,0,1,0,1
+Chichen Itza,Mexico,"Mayan ruins on the Yucatan Peninsula",3000000,1,0,0,1
+Stonehenge,United Kingdom,"Prehistoric monument in Wiltshire",2000000,1,0,0,1
+Alhambra,Spain,"Palace and fortress complex in Granada",3000000,0,1,1,0
