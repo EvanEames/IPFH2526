@@ -19,24 +19,34 @@ class Applicant:
     questionnaire=False
     diploma=False
     cv=False
+    sample=False
+    english=False
 
-    def update_data(self, data):
+
+    def update_data(self, data:dict):
+        """
+        Takes in data and updates the attributes.
+        """
+        self.date_of_birth=data.get('Date of Birth')
         self.date_of_birth=data['Date of Birth']
-        self.place_of_birth=data['Place of Birth']
-        self.nationality=data['Nationality']
-        self.address=data['Current Home Address']
-        self.phone=data['Telephone']
-        self.email=data['E-mail Address']
+        self.place_of_birth=data.get('Place of Birth')
+        self.nationality=data.get('Nationality')
+        self.address=data.get('Current Home Address')
+        self.phone=data.get('Telephone')
+        self.email=data.get('E-mail Address')
 
         degree_strings = ['1st Degree', '2nd Degree', '3rd Degree']
         for i, degree in enumerate(degree_strings):
-            self.degrees.append(data[degree])
-            self.programs.append(data[str(i+1) + ' Full Name of Program'])
-            self.universities.append(data[str(i+1) + ' University'])
-            self.graduation_years.append(data[str(i+1) + ' Year of graduation'])
+            self.degrees.append(data.get(degree))
+            self.programs.append(data.get(str(i+1) + ' Full Name of Program'))
+            self.universities.append(data.get(str(i+1) + ' University'))
+            self.graduation_years.append(data.get(str(i+1) + ' Year of graduation'))
             
 
-    def app_info_to_dict(self):
+    def app_info_to_dict(self) -> dict:
+        """
+        Take applicant info from attributes and output them as a dictionary.
+        """
         dict = {'Application No.': self.id,
                 'Surname': self.last_name,
                 'First name': self.first_name,
@@ -63,6 +73,8 @@ class Applicant:
               'CV': "Present" if self.cv else None,
               'Questionnaire': "Present" if self.questionnaire else None,
               'Diploma/ToR': "Present" if self.diploma else None,
+              'Academic Work Sample': "Present" if self.sample else None,
+              'English Certificate': "Present" if self.english else None,
               'E-mail': self.email
                 }
         

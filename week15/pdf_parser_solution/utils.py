@@ -2,9 +2,18 @@ from pdfminer.pdfparser import PDFParser
 from pdfminer.pdfdocument import PDFDocument
 from pdfminer.psparser import PSLiteral, PSSyntaxError
 from pdfminer.pdftypes import resolve1, PDFObjRef
-from week15.pdf_parser_solution.applicant_class import Applicant
+from applicant_class import Applicant
 
-def initializeApplicant(directory):
+def initializeApplicant(directory:str) -> Applicant:
+    """
+    Function initializes an applicant object from a directory name (str).
+    Example:
+    If the directory is:
+    007_James_BOND
+    The applicant would have id = 007, last name = Bond, first_name = James
+
+    directory = a directory where an applicant's data is stored
+    """
     id = directory.split('_')[0]
     last_name = directory.split('_')[-1]
     first_name = ' '.join(directory.split('_')[1:-1])
@@ -12,6 +21,10 @@ def initializeApplicant(directory):
     return applicant
 
 def extractApplicantInfo(questionnaire_file, applicant):
+    """
+    Parse questionnaire file pdf and add data to the applicant object.
+    Return 
+    """
     data = {}
     with open(questionnaire_file, 'rb') as fp:
         try:
@@ -38,10 +51,10 @@ def extractApplicantInfo(questionnaire_file, applicant):
                 
                 data[name.decode('utf-8')] = value
 
-            applicant.update_data(data)
-
         except:
             print("WARNING: Cannot handle file with digital signature.")
             return {}
-        
+        finally:
+            applicant.update_data(data)
+
     return data
